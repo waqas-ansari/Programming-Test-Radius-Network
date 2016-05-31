@@ -2,24 +2,13 @@ package com.arktech.waqasansari.programmingtest_radiusnetwork;
 
 import android.app.Activity;
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
-import android.graphics.PorterDuff;
-import android.graphics.PorterDuffXfermode;
 import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
 
 public class CustomPagerAdapter extends PagerAdapter{
     Context context;
-    int[] viewPagerItems = {R.layout.view_pager_item_1, R.layout.view_pager_item_2, R.layout.view_pager_item_3};
     int[] imageListsIds;
 
     int[] customImgIds = {R.id.img1, R.id.img2, R.id.img3, R.id.img4};
@@ -34,7 +23,7 @@ public class CustomPagerAdapter extends PagerAdapter{
     public Object instantiateItem(ViewGroup container, int position) {
         LayoutInflater inflater = ((Activity)context).getLayoutInflater();
 
-        View viewItem = inflater.inflate(R.layout.view_pager_item_1, container, false);
+        View viewItem = inflater.inflate(R.layout.view_pager_item, container, false);
 
 
         CustomImageView customImageView[] = new CustomImageView[customImgIds.length];
