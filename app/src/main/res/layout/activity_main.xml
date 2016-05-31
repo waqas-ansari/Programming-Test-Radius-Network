@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.arktech.waqasansari.programmingtest_radiusnetwork.MainActivity">
+
+    <com.arktech.waqasansari.programmingtest_radiusnetwork.CustomTextView
+        android:id="@+id/txtGalleryHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Photo Gallery"
+        android:textColor="#FFFFFF"
+        android:shadowColor="#0000FF"
+        android:shadowRadius="10"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:padding="5dp"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_below="@+id/txtGalleryHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:overScrollMode="never"/>
+
+    <LinearLayout
+        android:id="@+id/indicatorLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp">
+    </LinearLayout>
+
+</RelativeLayout>
